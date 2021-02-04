@@ -49,6 +49,9 @@
                                 <rect key="frame" x="20" y="303" width="97" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DME-Jq-Cr8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPo-Su-zhx">
                                 <rect key="frame" x="28" y="367" width="65" height="50"/>
@@ -61,6 +64,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="DPo-Su-zhx" id="d7P-dn-hm4"/>
+                        <outlet property="textField1" destination="b4U-GZ-s9e" id="c3g-sZ-nnc"/>
+                        <outlet property="textField2" destination="qo8-jR-yuO" id="D9D-qQ-heT"/>
+                        <outlet property="textField3" destination="grk-LK-Tz6" id="rFB-ag-tbi"/>
+                        <outlet property="textField4" destination="JXF-6A-epw" id="hKc-gG-RBb"/>
+                        <outlet property="textField5" destination="X1O-kO-a8i" id="TZ9-Uu-mKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
