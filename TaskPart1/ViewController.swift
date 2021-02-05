@@ -16,15 +16,41 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField5: UITextField!
 
     @IBOutlet weak var label: UILabel!
-    
+
+    var textField1Value1:Int? = nil
+    var textField2Value2:Int? = nil
+    var textField3Value3:Int? = nil
+    var textField4Value4:Int? = nil
+    var textField5Value5:Int? = nil
+
+    var total:Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+
     }
 
     @IBAction func button(_ sender: UIButton) {
+
+        calculation()
+
     }
-    
+
+    func calculation () {
+
+        textField1Value1 = Int(textField1.text!) ?? 0
+        textField2Value2 = Int(textField2.text!) ?? 0
+        textField3Value3 = Int(textField3.text!) ?? 0
+        textField4Value4 = Int(textField4.text!) ?? 0
+        textField5Value5 = Int(textField5.text!) ?? 0
+
+
+        total = textField1Value1! + textField2Value2! + textField3Value3! + textField4Value4! + textField5Value5!
+
+        label.text = String(total)
+
+    }
 }
 
